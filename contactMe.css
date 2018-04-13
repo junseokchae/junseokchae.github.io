@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* ===============================
+Base Styles
+===============================
+
+*/
+p #github, p #linkedIn{
+	padding: 10px;
+	size: 30px;
+}
+a{
+	color: black;
+}
+a:hover{
+	color: white;
+	background-color: skyblue;
+}
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+	
+}
+
+/* ================================
+Tablet & Desktop Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+
+}

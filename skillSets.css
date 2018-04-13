@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* ===============================
+Base Styles
+===============================
+
+*/
+.skillsPC *{
+	list-style-type: none;
+	color: black;
+	background-color: papayawhip;
+}
+
+article a{
+	color: black;
+}
+
+article a:hover{
+	color: white;
+	background-color: plum;
+}
+
+article img{
+	width: 100%;
+}
+
+table{
+	border: 2px outset skyblue;
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+caption{
+	margin-bottom: 10px;
+}
+
+td{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+th, thead td{
+	background-color: skyblue;
+	color: white;	
+}
+
+tbody td{
+	border: 1px solid skyblue;
+}
+th{
+	border: 1px solid white;
+
+}
+	
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+	
+	.img *{
+		width: 100%;
+	}
+	.skillsPC *{
+		display: none;
+	}
+}
+
+/* ================================
+Tablet & Desktop Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+	.skillsPC{
+		display: -webkit-flex;/*define a flex box*/
+		display: flex;
+		
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		
+		justify-content:space-around;
+	}
+	
+	.skillsPC *{
+		flex-basis: 120px;
+		flex-grow: 1;
+	}	
+	
+	article{
+		float: left;
+		width: 70%;
+	}
+	.img{
+		float: right;
+		width: 25%;
+	}
+	.img *{
+		width: 100%;
+	}
+	footer{
+		clear: both;
+	}
+	
+}
+
+/* ================================
+Tablet & Desktop Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 921px) {
+	.skillsPC{
+		float: left;
+		width: 15%;
+		min-width: 140px;
+		padding-bottom: 350px;
+		padding-right: 10px;
+	}
+
+	article{
+		width: 55%;
+	}
+	
+
+	.img{
+		float: right;
+		width: 25%;
+	}
+	.img *{
+		width: 100%;
+	}
+	footer{
+		clear: both;
+	}
+	
+}

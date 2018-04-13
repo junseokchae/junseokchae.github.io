@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* ===============================
+Base Styles
+===============================
+
+*/
+html{
+	background-color: cornsilk;
+}
+
+header{
+	background-color: mistyrose;
+}
+
+a {
+	text-decoration: none;
+} 
+
+header nav ul{
+	list-style-type: none;
+}
+
+img.jun{
+	
+	width: 100%;
+}
+
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+	nav.mainNav ul{
+		display: none;
+		
+	}
+	a#navicon:hover+ul, nav.mainnav ul:hover {
+		display: block;
+	}
+
+}
+/* ================================
+Tablet & Desktop Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 481px) {
+	.skillsMobile *{
+		display: none;
+	}
+	img.navicon{
+		display: none;
+	}
+	nav.mainNav ul li{
+		flex-basis: 90px;
+		flex-grow: 1;
+	}
+	nav a{
+		color: white;
+	}
+
+	nav.mainNav ul{
+		background-color: skyblue;
+		display: -webkit-flex;/*define a flex box*/
+		display: flex;
+		text-align: center;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+	}
+	nav ul li:hover {
+		background-color: white;
+		color: black;
+	}
+
+
+}
