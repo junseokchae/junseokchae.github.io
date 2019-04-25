@@ -38,6 +38,9 @@ Mobile Styles: 0px to 480px
 	.navicon:hover+ul, .mainNav ul:hover {
 		display: block;
 	}
+	.img{
+		display:none;
+	}
 
 }
 /* ================================

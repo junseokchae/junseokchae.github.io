@@ -28,16 +28,6 @@ table{
 	border: 2px outset skyblue;
 	border-collapse: collapse;
 	width: 100%;
-	margin-bottom: 10px;
-}
-
-caption{
-	margin-bottom: 10px;
-}
-
-td{
-	padding-left: 5px;
-	padding-right: 5px;
 }
 
 th, thead td{
@@ -101,7 +91,9 @@ Tablet & Desktop Styles: 481px and greater
 	footer{
 		clear: both;
 	}
-	
+	.invisibleListPC{
+		display: none;
+	}
 }
 
 /* ================================
@@ -132,5 +124,7 @@ Tablet & Desktop Styles: 481px and greater
 	footer{
 		clear: both;
 	}
-	
+	.invisibleListPC{
+		display: none;
+	}
 }
