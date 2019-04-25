@@ -41,6 +41,15 @@ Mobile Styles: 0px to 480px
 	.img{
 		display:none;
 	}
+	
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	a:hover{
+		color: white;
+		text-decoration: none;
+	}
 
 }
 /* ================================
