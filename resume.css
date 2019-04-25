@@ -37,3 +37,7 @@ a:hover{
 	color: skyblue;
 	background-color: white;
 }
+
+#award{
+	max-width: 80%;
+}
